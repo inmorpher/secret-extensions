@@ -1,0 +1,55 @@
+/********* !!!!!!!!!!!!!!!!! *********/
+/********* ADVANTAGE SECTION *********/
+/********* !!!!!!!!!!!!!!!!! *********/
+    
+.advantage
+    padding: 40px 0
+    background: var(--bg-color)
+    &__wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 80%
+    &-item
+        width: 20%
+        height: 100%
+        text-align: center
+        &__title
+            +FiraLight
+            font-size: 24px
+@media screen and ( max-width: 1200px )
+    .advantage
+        &__wrapper
+            width: 90%
+        &-item
+            &__title
+                font-size: 20px
+@media screen and ( max-width: 991px )
+    .advantage
+        padding: 10px 0
+        &__wrapper
+            width: 100%
+            height: 100%
+        &-item
+            margin: 10px 0
+            &__img
+                width: 100%
+                height: 100%
+                object-fit: contain
+            &__title
+                font-size: 16px
+@media screen and ( max-width: 768px )
+    .advantage
+        &-item
+            &__title
+                font-size: 14px
+    
+@media screen and ( max-width: 540px )
+    .advantage
+        &__wrapper
+            flex-wrap: wrap
+        &-item
+            width: 40%
+    
+    
+        
